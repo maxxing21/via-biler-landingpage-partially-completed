@@ -31,6 +31,13 @@
     box-sizing:0;
 }
 
+body{
+    font-family: var(--font-family);
+    line-height: 1.6rem;
+}
+    
+
+
 /* HEADER OG NAVIGATION */
 
 header {
@@ -43,7 +50,9 @@ header {
     padding: 15px 7%;
 
     /* INDSÆT CSS-KODE 3 HER */
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     z-index: 1000;
 }
 
