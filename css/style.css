@@ -1,0 +1,190 @@
+/* CSS-VARIABLER */
+
+:root {
+    /* INDSÆT CSS-KODE 1 HER */
+
+    --font-family: 'Inter', Arial, sans-serif;
+    --font-size-small: 13px;
+    --font-size-base: 16px;
+    --font-size-medium: 18px;
+    --font-size-large: 20px;
+    --font-size-xl: 24px;
+    --font-size-xxl: 28px;
+    --font-size-hero: 4.5rem;
+    --font-size-hero-tablet: 3rem;
+    --font-size-hero-mobile: 2.5rem;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+}
+
+
+/* INDSÆT CSS-KODE 2 HER */
+
+
+/* HEADER OG NAVIGATION */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 7%;
+
+    /* INDSÆT CSS-KODE 3 HER */
+
+    z-index: 1000;
+}
+
+header .brand {
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-bold);
+
+    /* INDSÆT CSS-KODE 4 HER */
+
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+header .navbar ul {
+    /* INDSÆT CSS-KODE 5 HER */
+}
+
+header .navbar ul li {
+    position: relative;
+    margin: 0 20px;
+}
+
+header .navbar ul li a {
+    color: var(--primary-color);
+    display: block;
+    padding: 15px 10px;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header .navbar ul li a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.workshop-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.workshop-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    display: none;
+    color: var(--secondary-color);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+}
+
+
+/* HERO-SEKTION */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    margin-top: 80px;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(''); /* INDSÆT BILLEDE-URL HER */
+
+    /* INDSÆT CSS-KODE 6 HER */
+
+    /* INDSÆT CSS-KODE 7 HER */
+
+    text-align: center;
+}
+
+.hero-content h1 {
+    color: var(--white);
+    font-size: var(--font-size-hero);
+    font-weight: var(--font-weight-bold);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+}
+
+
+/* MOBIL- OG TABLETSTYLES */
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    header .brand {
+        font-size: var(--font-size-large);
+    }
+
+    header label {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        background: var(--white);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    header .navbar ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+        margin: 0;
+    }
+
+    header .navbar ul li a {
+        padding: 20px;
+        border-bottom: 1px solid var(--light-gray);
+        font-size: var(--font-size-medium);
+        text-align: left;
+    }
+
+    .workshop-btn {
+        padding: 10px 20px;
+        font-size: var(--font-size-small);
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: block;
+    }
+
+    /* INDSÆT CSS-KODE 8 HER */
+}
