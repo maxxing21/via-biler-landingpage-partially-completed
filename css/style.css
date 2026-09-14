@@ -53,6 +53,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
     z-index: 1000;
 }
 
@@ -145,8 +146,12 @@ header label {
 
 
     /* INDSÆT CSS-KODE 7 HER */
+        display:flex;
+        align-item:center;
+        justify-content:center;
 
     text-align: center;
+
 }
 
 .hero-content h1 {
@@ -210,4 +215,14 @@ header label {
     }
 
     /* INDSÆT CSS-KODE 8 HER */
+    .hero{
+        margin-top: 70px;
+        height: 80vh;
+    }
+
+    .hero-content{
+        padding:0 20px;
+        font-size: var(--font-size-hero-mobile);
+    }
+        
 }
