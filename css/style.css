@@ -2,7 +2,10 @@
 
 :root {
     /* INDSÆT CSS-KODE 1 HER */
-
+    --primary-color:#000000;
+    --secondary-color:#333333;
+    --white:#ffffff;
+    --light-gray:#eeeeee;
     --font-family: 'Inter', Arial, sans-serif;
     --font-size-small: 13px;
     --font-size-base: 16px;
@@ -22,7 +25,11 @@
 
 
 /* INDSÆT CSS-KODE 2 HER */
-
+*{
+    padding:0;
+    margin:0;
+    box-sizing:0;
+}
 
 /* HEADER OG NAVIGATION */
 
